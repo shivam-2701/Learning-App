@@ -16,7 +16,8 @@
         >
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -95,12 +96,81 @@
                         android:src="@drawable/header_image"/>
                 </RelativeLayout>
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="#020000"
+                        android:text="@string/popular_courses"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/primaryTextColor"
+                        android:text="See All"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:paddingRight="8dp"
+                        />
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/card_layout_courses" />
+
+                        <include layout="@layout/card_layout_courses" />
+
+                        <include layout="@layout/card_layout_courses" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="#020000"
+                        android:text="Tutorials"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/primaryTextColor"
+                        android:text="See All"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:paddingRight="8dp"
+                        />
+                </RelativeLayout>
             </LinearLayout>
-
-
-
-
 
         </ScrollView>
 
